@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0093E9, #80D0C7);
+    transition: 0.3s, color 0.3s;
+}
+body.dark-theme {
+background: linear-gradient(to bottom, #2b2b2b, #1a1a1a);
+color: #f1f1f1;
+}
+
+.container {
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+padding: 20px;
+max-width: 400px;
+width: 100%;
+transition: 0.3s, color 0.3s;
+}
+
+body.dark-theme .container {
+background: #333;
+color: #f1f1f1;
+}
+
+.theme-icon {
+font-size: 20px;
+cursor: pointer;
+}
+
+body.dark-theme .container h1 {
+    color: white;
+}
+body.dark-theme .container p {
+    color: white;
+}
+
+body.dark-theme .theme-icon {
+color: #f1f1f1;
+}
+
+.download-btn {
+background-color: #28a745;
+color: #fff;
+transition: 0.3s;
+}
+
+body.dark-theme .download-btn {
+background-color: #1e7b34;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078ff;
+}
+
+.theme-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-container button {
+    padding: 10px 15px;
+    background-color: #0078ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input-container button:hover {
+    background-color: #005bb5;
+}
+
+.download-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+/* Download Card */
+.card {
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-header {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+.card-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-header .info {
+    flex: 1;
+}
+
+.card-header .info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.card-header .info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.card-footer {
+    padding: 15px;
+    background-color: #0078ff;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    background-color: #005bb5;
+    transition: background-color 0.3s ease;
+}
+
+.card-footer a:hover {
+    background-color: #004c99;
+}
+
+/* Dark Theme Styles */
+body.dark-theme .card {
+    background: #333;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-theme .card-header .info h3 {
+    color: #f1f1f1;
+}
+
+body.dark-theme .card-header .info p {
+    color: #bbb;
+}
+
+body.dark-theme .card-footer {
+    background-color: #1a5a99;
+}
+
+body.dark-theme .card-footer a {
+    background-color: #004080;
+}
+
+body.dark-theme .card-footer a:hover {
+    background-color: #003366;
+}
