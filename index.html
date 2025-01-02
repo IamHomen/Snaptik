@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapTik - TikTok Downloader</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">SnapTik</div>
+            <div class="theme-icon" id="themeToggle">&#9788;</div>
+        </div>
+        <h1>SnapTik</h1>
+        <p>TikTok Video Downloader Without Watermark</p>
+        <div class="input-container">
+            <input id="videoLink" type="text" placeholder="Paste TikTok link here">
+            <button>Paste</button>
+        </div>
+        <button class="download-btn" onclick="getDownloadUrl()">Download</button>
+    </div>
+
+    <div style="display: none;" id="card" class="card">
+        <div class="card-header">
+            <img id="cover" src="" alt="">
+            <div class="info">
+                <h3 id="description"></h3>
+                <p id="nickname"></p>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a id="download" href="">Download</a>
+        </div>
+    </div>
+</body>
+</html>
